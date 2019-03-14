@@ -57,7 +57,7 @@ a {
   transition: all 0.3s;
 
   &:hover {
-    color:#2b2b2b;
+    color:#282828;
   }
 }
 
@@ -71,6 +71,10 @@ nav {
   a {
     box-sizing: border-box;
     margin: 20px;
+
+    &.active {
+      color: #282828;
+    }
   }
 }
 

@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link,NavLink} from "react-router-dom";
 import {AnimatedSwitch} from 'react-router-transition';
 import Experiments from './Experiments';
 import About from './About';
@@ -9,8 +9,8 @@ export default class App extends React.Component {
     return (<Router>
       <div>
         <nav>
-          <Link to="/">Experiments</Link>
-          <Link to="/about">About</Link>
+          <NavLink exact to="/">Experiments</NavLink>
+          <NavLink to="/about">About</NavLink>
         </nav>
         <AnimatedSwitch atEnter={{
             opacity: 0
