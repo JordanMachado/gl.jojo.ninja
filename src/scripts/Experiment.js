@@ -10,7 +10,7 @@ export default class Experiment extends React.Component {
     return (
       <Fragment>
       <a href={this.props.data.url} target='_blank' className='experiment' style={style}>
-        <FadeIn height={600} once>
+        <FadeIn height={350}  duration={250}  one-time once>
                 {onload => (
                   <Fragment>
                   <div

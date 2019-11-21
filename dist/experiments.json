@@ -1,81 +1,138 @@
 {
   "experiments":[
     {
+      "id": "techno",
+      "bg": "/image/techno.png",
+      "url": "https://gl.jojo.ninja/experiments/techno/",
+      "bgColor": "rgb(0, 0, 0)",
+      "tech": "three.js"
+    },
+    {
+      "id": "motiondetection",
+      "bg": "/image/motion-detection.png",
+      "url": "https://gl.jojo.ninja/experiments/motionCamera/",
+      "bgColor": "rgb(0, 0, 0)",
+      "tech": "three.js"
+    },
+    {
+      "id": "verletgpu",
+      "bg": "/image/verlet-gpu.png",
+      "url": "http://gl.jojo.ninja/experiments/verlet-gpu/",
+      "bgColor": "rgb(0, 0, 0)",
+      "tech": "three.js"
+    },
+    {
       "id": "particles",
       "bg": "/image/particles.png",
       "url": "http://gl.jojo.ninja/experiments/particles/",
-      "bgColor": "rgb(250, 228, 221)"
+      "bgColor": "rgb(250, 228, 221)",
+      "tech": "jojogl"
     },
+    {
+     "id": "instanced-lines",
+     "bg": "/image/instanced-lines.png",
+     "url": "http://gl.jojo.ninja/experiments/instanced-lines",
+     "bgColor": "rgb(34, 59, 101)",
+     "tech": "jojogl"
+   },
+   {
+    "id": "shadow-particles",
+    "bg": "/image/shadow-particles.png",
+    "url": "http://gl.jojo.ninja/experiments/shadow-particles/",
+    "bgColor": "rgb(238, 220, 251)",
+    "tech": "jojogl"
+  },
+  {
+   "id": "curly",
+   "bg": "/image/curly.png",
+   "url": "http://gl.jojo.ninja/experiments/curly/",
+   "bgColor": "rgb(34, 99, 238)",
+   "tech": "jojogl"
+ },
+ {
+   "id": "fluctus",
+   "bg": "/image/fluctus.png",
+   "url": "http://jojo.ninja/fluctus/",
+   "bgColor": "rgb(243, 242, 250)",
+   "tech": "three.js"
+ },
+ {
+  "id": "circle",
+  "bg": "/image/circle.png",
+  "url": "http://gl.jojo.ninja/experiments/circle/",
+  "bgColor": "rgb(6, 6, 6)",
+  "tech": "jojogl"
+},
+
+
+    {
+      "id": "lithos",
+      "bg": "/image/lithos.png",
+      "url": "http://gl.jojo.ninja/experiments/lithos/",
+      "bgColor": "rgb(13, 42, 64)",
+      "tech": "three.js"
+    },
+
     {
       "id": "l-system",
       "bg": "/image/l-system.png",
       "url": "http://gl.jojo.ninja/experiments/l-system",
-      "bgColor": "rgb(12, 12, 12)"
-    }, {
-      "id": "instanced-lines",
-      "bg": "/image/instanced-lines.png",
-      "url": "http://gl.jojo.ninja/experiments/instanced-lines",
-      "bgColor": "rgb(34, 59, 101)"
+      "bgColor": "rgb(12, 12, 12)",
+      "tech": "jojogl"
     }, {
       "id": "verlet",
       "bg": "/image/verlet.png",
       "url": "http://gl.jojo.ninja/experiments/verlet",
-      "bgColor": "rgb(13, 189, 240)"
+      "bgColor": "rgb(13, 189, 240)",
+      "tech": "jojogl"
     }, {
       "id": "strange",
       "bg": "/image/strange.png",
       "url": "http://gl.jojo.ninja/experiments/strange-attractor",
-      "bgColor": "rgb(160, 111, 125)"
-    }, {
-      "id": "shadow-particles",
-      "bg": "/image/shadow-particles.png",
-      "url": "http://gl.jojo.ninja/experiments/shadow-particles/",
-      "bgColor": "rgb(238, 220, 251)"
+      "bgColor": "rgb(160, 111, 125)",
+      "tech": "jojogl"
     }, {
       "id": "marvel-noise",
       "bg": "/image/marvel-noise.png",
       "url": "http://dev.goodboydigital.com/client/goodboy/labs/marvel-noise/",
-      "bgColor": "rgb(174, 132, 143)"
-    }, {
-      "id": "curly",
-      "bg": "/image/curly.png",
-      "url": "http://gl.jojo.ninja/experiments/curly/",
-      "bgColor": "rgb(34, 99, 238)"
+      "bgColor": "rgb(174, 132, 143)",
+      "tech": "jojogl"
     }, {
       "id": "reflection",
       "bg": "/image/reflection.png",
       "url": "http://gl.jojo.ninja/experiments/reflection/",
-      "bgColor": "rgb(142, 150, 166)"
+      "bgColor": "rgb(142, 150, 166)",
+      "tech": "jojogl"
     }, {
       "id": "cubemap",
       "bg": "/image/cubemap.png",
       "url": "http://gl.jojo.ninja/experiments/cubemap/",
-      "bgColor": "rgb(123, 146, 159)"
-    }, {
-      "id": "circle",
-      "bg": "/image/circle.png",
-      "url": "http://gl.jojo.ninja/experiments/circle/",
-      "bgColor": "rgb(6, 6, 6)"
-    }, {
+      "bgColor": "rgb(123, 146, 159)",
+      "tech": "jojogl"
+    },{
       "id": "curl",
       "bg": "/image/curl.png",
       "url": "http://gl.jojo.ninja/experiments/curl/",
-      "bgColor": "rgb(42, 37, 91)"
+      "bgColor": "rgb(42, 37, 91)",
+      "tech": "jojogl"
     }, {
       "id": "instancinglookat",
       "bg": "/image/instancinglookat.png",
       "url": "http://gl.jojo.ninja/experiments/instancinglookat/",
-      "bgColor": "rgb(12, 26, 85)"
+      "bgColor": "rgb(12, 26, 85)",
+      "tech": "jojogl"
     }, {
       "id": "instancingcube2",
       "bg": "/image/instancingcube2.png",
       "url": "http://gl.jojo.ninja/experiments/instancingcube2/",
-      "bgColor": "rgb(183, 173, 252)"
+      "bgColor": "rgb(183, 173, 252)",
+      "tech": "jojogl"
     }, {
       "id": "waves",
       "bg": "/image/waves.png",
       "url": "http://gl.jojo.ninja/experiments/waves/",
-      "bgColor": "rgb(248, 141,)"
+      "bgColor": "rgb(248, 141,)",
+      "tech": "jojogl"
     }
     ]
     }

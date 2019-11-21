@@ -6,44 +6,55 @@ import React from 'react';
 
 import ReactDOM from 'react-dom';
 import App from './App'
-import ExperimentsData from './experiments.json'
+
 // import {Query, SuperConfig} from 'dev';
 // SuperConfig.init();
-const assets = []
-const loader = assetsLoader({
-  assets
-});
-window.getAsset = function(id) {
-  return loader.get(id);
-}
 
+
+var getJSON = function(url, successHandler, errorHandler) {
+	var xhr = typeof XMLHttpRequest != 'undefined'
+		? new XMLHttpRequest()
+		: new ActiveXObject('Microsoft.XMLHTTP');
+	xhr.open('get', url, true);
+	xhr.onreadystatechange = function() {
+		var status;
+		var data;
+		// https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate
+		if (xhr.readyState == 4) { // `DONE`
+			status = xhr.status;
+			if (status == 200) {
+				data = JSON.parse(xhr.responseText);
+				successHandler && successHandler(data);
+			} else {
+				errorHandler && errorHandler(status);
+			}
+		}
+	};
+	xhr.send();
+};
+
+
+let experiments;
 domready(()=> {
 
 
-  if(assets.length > 0) {
-    loader.on('error', function(error) {
-      console.error(error);
-    })
-    .on('progress', function(progress) {
-      // console.log((progress * 100).toFixed() + '%');
-    })
-    .on('complete', function(assets) {
-      document.body.classList.remove('loading');
-      window.assets = assets;
-      console.table(assets);
-      init();
-    })
-    .start();
-  } else {
+  getJSON('experiments.json', function(data) {
+    experiments = data.experiments;
     init();
-  }
+
+
+  }, function(status) {
+    console.error('error fetching json',status);
+  });
+
+
 
 
 });
 
 function init() {
   ReactDOM.render(
-    <App experiments={ExperimentsData.experiments}/>,
+    <App experiments={experiments}/>,
     document.getElementById("root")
 );
 }
