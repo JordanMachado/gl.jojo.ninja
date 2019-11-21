@@ -1,5 +1,5 @@
 # GL.JOJO.NINJA
 
-// to fill
+![Alt text](http://jojo.ninja/share/gl.jojo.ninja.jpg "thumb")
 
-## [http://gl.jojo.ninja](http://gl.jojo.ninja)
+## [website](http://gl.jojo.ninja)
