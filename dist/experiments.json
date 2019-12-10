@@ -1,6 +1,13 @@
 {
   "experiments":[
     {
+      "id": "verlet-noise",
+      "bg": "/image/verlet-noise.png",
+      "url": "https://gl.jojo.ninja/experiments/verlet-noise/",
+      "bgColor": "rgb(0, 0, 0)",
+      "tech": "three.js"
+    },
+    {
       "id": "techno",
       "bg": "/image/techno.png",
       "url": "https://gl.jojo.ninja/experiments/techno/",
