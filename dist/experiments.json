@@ -1,6 +1,13 @@
 {
   "experiments":[
     {
+      "id": "verlet-matcap",
+      "bg": "/image/verlet-matcap.png",
+      "url": "https://gl.jojo.ninja/experiments/verlet-matcap/",
+      "bgColor": "rgb(66,59,149)",
+      "tech": "three.js"
+    },
+    {
       "id": "verlet-noise",
       "bg": "/image/verlet-noise.png",
       "url": "https://gl.jojo.ninja/experiments/verlet-noise/",
