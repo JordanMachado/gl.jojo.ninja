@@ -1,5 +1,27 @@
 {
+
   "experiments":[
+    {
+      "id": "motion-spawn",
+      "bg": "/image/motion-spawn.jpg",
+      "url": "https://gl.jojo.ninja/experiments/motion-spawn/",
+      "bgColor": "rgb(152, 121, 255)",
+      "tech": "three.js"
+    },
+    {
+      "id": "verlet-instancedlines",
+      "bg": "/image/verlet-lines.jpg",
+      "url": "https://gl.jojo.ninja/experiments/verlet-instanced-lines",
+      "bgColor": "rgb(133,187,162)",
+      "tech": "three.js"
+    },
+    {
+      "id": "verlet-motion",
+      "bg": "/image/verlet-motion.jpg",
+      "url": "https://gl.jojo.ninja/experiments/verlet-motion",
+      "bgColor": "rgb(140,136,251)",
+      "tech": "three.js"
+    },
     {
       "id": "verlet-matcap",
       "bg": "/image/verlet-matcap.png",
